@@ -165,31 +165,6 @@
             {% endif %}
             {% endfor %}
           </iron-selector>
-
-          <div>
-            <a
-              class="bottom-drawer-link"
-              on-tap="_onAddToHomescreen"
-              hidden$="[[_isAddToHomeScreenHidden(ui.addToHomescreen, viewport.isLaptopPlus)]]"
-            >
-              {$ addToHomeScreen.cta $}
-            </a>
-
-            <a
-              class="bottom-drawer-link"
-              href$="[[_getTicketUrl(tickets)]]"
-              target="_blank"
-              rel="noopener noreferrer"
-              on-tap="closeDrawer"
-              ga-on="click"
-              ga-event-category="ticket button"
-              ga-event-action="buy_click"
-              layout horizontal center
-            >
-              <span>{$ reserveTicket $}</span>
-              <iron-icon icon="hoverboard:open-in-new"></iron-icon>
-            </a>
-          </div>
         </div>
 
       </app-drawer>
