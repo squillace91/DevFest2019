@@ -154,6 +154,8 @@
         {% endif %}
         {% endfor %}
 
+        <paper-tab class="signin-tab" on-tap="signIn" link hidden$="[[user.signedIn]]">{$ signIn $}</paper-tab>
+
         <a href="https://www.eventbrite.ca/e/gdg-winnipeg-devfest-2019-registration-55122804793?ref=estw" target="_blank">
           <paper-button class="buy-button">Register</paper-button>
         </a>
@@ -223,11 +225,11 @@
         </div>
       </paper-menu-button>
 
-      <!-- <paper-icon-button
+      <paper-icon-button
         icon="hoverboard:account"
         on-tap="signIn"
         hidden$="[[_isAccountIconHidden(user.signedIn, viewport.isLaptopPlus)]]"
-      ></paper-icon-button> -->
+      ></paper-icon-button>
     </app-toolbar>
 
   </template>
