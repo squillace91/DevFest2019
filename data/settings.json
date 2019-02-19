@@ -34,7 +34,8 @@
     {
       "route": "schedule",
       "permalink": "/schedule/",
-      "label": "Schedule"
+      "label": "Schedule",
+      "enabled": true
     },
     {
       "route": "team",
